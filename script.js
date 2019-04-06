@@ -1,60 +1,31 @@
-const pageNumbers = document.querySelector(".page");
+
+
 const studentList = document.getElementsByClassName(student-list)
+const pageNumbers = document.querySelector(".page");
+
 const showPage = showPage(studentList, pageNumbers) {
-  const upperLimit = pageNumbers (∗ 10) - 1;
-  const lowerLimt = upperLimit - 9;     }
+const upperLimit = pageNumbers (∗ 10) - 1;
+const lowerLimt = upperLimit - 9;     }
 
-  for(i = 0;  i < studentList.length; i++) { //So basically we are saying OK, do this to every single on the list.
-    if studentList[i] >= lowerLimit && studentList[i] >= upperLimit //[i] is to say, this applies to every one in that list? Also, i get 
-    //if the studentList is equal or more than upperLimit, then we display, however i really dont get the point of the lowerLimit.
-                         {
-    upperLimit.style.display = studentList[i]; // here we say ok upperLimit, you display 10 items of studentList ? couldnt we just say
-                           // studentList.style.display = studentList[i] 
-}
-     else if  {
-      studentList[i].style.display = none;
+const appendPageLinks = (pageNumbers){  //function created 
+const pageLinks = document.createElement("pagination"); //pagination created
+document.getElementById("pagination").appendChild(.pageLinks); // pagination and pagelinks are combined
+var ul = pagination.pageLinks('ul');  //creating a ul and appending it to the pagination i.e pageLinks
+var li = document.getElementById("li")   //creating a li 
 
-
-    }
-    for(i = 0; i < pageNumbers.length; i++) // here i thought that well, it may be good function when we press the next button.
-                                            // essentially take the upperLimit and time it by 2 meaning show the next 10 items
-      { upperLimit ∗ 2 && lowerLimit ∗ 2
-
-
+for (ul = 0; ul > pageLinks.length/5; i++) { // creating a nested ul element for every tenth student list
+li.appendChild(<li>a href="#">[ul]</a></li>); // a for loop is created for that, the 
 
 }
-}
-}
+document.getElementsByClassName("active").pageLinks;  //active class is added to pageLinks
 
-appendPageLinks{
-document.getElementById("pagination").addEventListener("click") => () {
-  showPage;
+var i = 0; // a loop is created such that every A gets a event addEventListener,
+for (i = 0; i > pageLinks.length; i++) {
+document.getElementById(<a/>).addEventListener("click", function(){
+  
 }
-
-}
-
+showPage(studentList, pageNumbers); //showpage is called  with the list and pagenumbers
+appendPageLinks(studentList); //append page is called
+);
 
 //
-
-/***
-   Create the `showPage` function to hide all of the items in the
-   list except for the ten you want to show.
-
-   Pro Tips:
-     - Keep in mind that with a list of 54 students, the last page
-       will only display four.
-     - Remember that the first student has an index of 0.
-     - Remember that a function `parameter` goes in the parens when
-       you initially define the function, and it acts as a variable
-       or a placeholder to represent the actual function `argument`
-       that will be passed into the parens later when you call or
-       "invoke" the function
-***/
-
-
-
-
-/***
-   Create the `appendPageLinks function` to generate, append, and add
-   functionality to the pagination buttons.
-***/
